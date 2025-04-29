@@ -1,0 +1,41 @@
+
+.projetos{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.projetos li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2rem 0;
+}
+
+.projetos li .titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.projetos li .titulo::before{
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('icons/project.svg');
+}
+.projetos a{
+    text-decoration: none;
+}
+
+.projetos a:hover{
+    text-decoration: underline;
+}

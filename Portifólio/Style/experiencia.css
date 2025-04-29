@@ -1,0 +1,41 @@
+
+.experiencias{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.experiencias li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2rem 0;
+}
+
+.experiencias li .experiencia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.experiencias li .data::before{
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('icons/date.svg');
+}
